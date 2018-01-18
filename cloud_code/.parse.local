@@ -1,0 +1,10 @@
+{
+  "applications": {
+    "Gateway": {
+      "applicationId": "JtoODYD7UOMEo5e0h8aDynD4gD4fxhjopsuPc8EQ"
+    },
+    "_default": {
+      "link": "Gateway"
+    }
+  }
+}

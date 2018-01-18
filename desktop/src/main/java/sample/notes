@@ -1,0 +1,133 @@
+@font-face {
+    font-family: Yo;
+    src: url('fonts/avenirnext-demibold.ttf');
+}
+
+.text {
+    -fx-font-family: "Yo";
+
+}
+
+
+
+//        loginScene = new Scene(login, ViewController.SCREEN_WIDTH, ViewController.SCREEN_HEIGHT);
+//        loginScene.setFill(new LinearGradient(1, 0, 1, 1, true,
+//                CycleMethod.REFLECT,
+//                new Stop(0.0, Colour.PASTEL_RED),
+//                new Stop(1.0, Colour.PASTEL_PINK)));
+//        loginScene.getStylesheets().add("login.css");
+//
+//         Sign Up Scene
+
+
+//        signUpScene = new Scene(signUp, ViewController.SCREEN_WIDTH, ViewController.SCREEN_HEIGHT);
+//        signUpScene.setFill(new LinearGradient(1, 0, 1, 1, true,
+//                CycleMethod.REFLECT,
+//                new Stop(0.0, Colour.PASTEL_RED),
+//                new Stop(1.0, Colour.PASTEL_PINK)));
+//        signUpScene.getStylesheets().add("signUp.css");
+
+
+//        homeScene = new Scene(home, ViewController.SCREEN_WIDTH, ViewController.SCREEN_HEIGHT);
+
+//        segueController = new SegueController(primaryScene, stage, loginScene, signUpScene, homeScene);
+
+Node toolbar = (Node)panels.get("Toolbar");
+//                    KeyFrame start = new KeyFrame(Duration.ZERO,
+//                            new KeyValue(toolbar.translateXProperty(), 340),
+//                            new KeyValue(login.translateXProperty(), 0));
+//                    KeyFrame end = new KeyFrame(Duration.seconds(1),
+//                            new KeyValue(toolbar.translateXProperty(), -338),
+//                            new KeyValue(login.translateXProperty(), -673));
+//                    Timeline slide = new Timeline(start, end);
+////                    slide.setOnFinished(f -> graph.getChildren().remove(login));
+//                    slide.play();
+
+    -fx-background-color: linear-gradient(from 100% 0% to 100% 100%, #345B74, #173142)
+
+
+   -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+
+-fx-border-insets: 4;
+
+   -fx-background-insets: 4;
+
+   -fx-background-radius: 6;
+
+   -fx-border-radius: 6;
+
+   -fx-border-color: gray;
+
+   -fx-border-style: solid;
+
+   -fx-border-width: 1;
+
+   -fx-effect: dropshadow(three-pass-box, rgba(100, 100, 100, 1), 24, 0.5, 0, 0);
+
+   .scroll-view {
+       -fx-background-color : #2D383E
+
+   }
+
+       -fx-padding:0 10 0 0;
+
+
+ParseQuery<ParseObject> chatRooms = ParseQuery.getQuery(Database.CHAT_ROOMS);
+chatRooms.whereEqualTo("objectId", chatRoomID.getObjectId());
+chatRooms.findInBackground(new FindCallback<ParseObject>() {
+    public void done(List<ParseObject> objects, ParseException e) {
+        if (objects != null) {
+            ParseObject chatRoom = objects.get(0);
+            List<ParseObject> peopleInRoom = chatRoom.getList("UserPointers");
+        }
+    }
+
+});
+
+
+//for (ParseObject person : peopleInRoom) {
+//        if (!person.hasSameId(user)) {
+//
+//        ParseQuery<ParseObject> recipients = ParseQuery.getQuery(Database.USERS);
+//        recipients.whereEqualTo("objectId", person.getObjectId());
+//        System.out.println(person.getObjectId());
+//        //      /   /   /       /   /   /       /   /   /   /   /   /   /   /   /   /   /
+//        try {
+//        List<ParseObject> results = recipients.find();
+//        ParseObject object = results.get(0);
+//        object.fetchIfNeeded(new GetCallback<ParseObject>() {
+//public void done(ParseObject object, ParseException k) {
+//        // all fields of the object will now be available here.
+//        System.out.println(object.getString("firstName"));
+//        }
+//        });
+//        } catch (ParseException f) {
+//        f.printStackTrace();
+//        }
+////                                recipients.findInBackground(new FindCallback<ParseObject>() {
+////                                    @Override
+////                                    public void done(List<ParseObject> list, ParseException r) {
+////                                        if (list != null) {
+////                                            ParseObject recipient = list.get(0);
+////
+////                                            System.out.println(recipient.getString("firstName"));
+////
+////                                            RecentCell cell = new RecentCell(user, recipient, "Deal! Let's meet tomorrow . . .", "3:39 PM");
+////                                            cell.addEventFilter(MouseEvent.MOUSE_CLICKED, f -> {
+////                                                if (selectedCell != cell) {
+////                                                    if (selectedCell != null) {
+////                                                        selectedCell.removeHighlight();
+////                                                    }
+////                                                    cell.highlight();
+////                                                    selectedCell = cell;
+////                                                }
+////                                            });
+////                                            tableCells.add(cell);
+////                                            return;
+////
+////                                        } else {}
+////
+////                                    }
+////                                });
+//        //      /   /   /       /   /   /       /   /   /   /   /   /   /   /   /   /   /
+//        }

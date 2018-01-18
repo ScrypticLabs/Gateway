@@ -1,0 +1,382 @@
+.text-input {
+    -fx-prompt-text-fill: derive(-fx-control-inner-background, -30%);
+}
+
+.text-input:focused {
+    -fx-prompt-text-fill: transparent;
+}
+
+.login-field {
+    -fx-text-box-border: transparent;
+    -fx-background-color: transparent;
+    -fx-text-fill: #2ABC9D;
+    -fx-background-insets: 0;
+    -fx-padding: 1 3 1 3;
+    -fx-faint-focus-color: transparent;
+    -fx-font-family: 'avenirnext-ultralight';
+    -fx-font-size: 24;
+    -fx-highlight-fill: #4A5A66;
+}
+
+.text-field:focused {
+    -fx-focus-color: transparent;
+}
+
+.login-button {
+    -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 3;
+    -fx-background-color: #2ABC9D;
+    -fx-font-family: 'avenirnextmedium';
+    -fx-text-fill: #2D383E;
+    -fx-font-size: 20;
+}
+
+.signUpNotifier {
+    -fx-text-fill: #2ABC9D;
+    -fx-font-family: 'avenirnext-ultralight';
+    -fx-font-size: 18;
+}
+
+.sign-up-button {
+    -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 3;
+    -fx-background-color: transparent;
+    -fx-font-family: 'avenirnext-demibold';
+    -fx-text-fill: #2ABC9D;
+    -fx-font-size: 18;
+}
+
+.toolbar-button {
+    -fx-background-color: transparent;
+}
+
+
+
+#Button {
+    -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color:
+        linear-gradient(from 0% 93% to 0% 100%, #a34313 0%, #903b12 100%),
+        #9d4024,
+        #d86e3a,
+        radial-gradient(center 50% 50%, radius 100%, #d86e3a, #c54e2c);
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+}
+#Button:hover {
+    -fx-background-color:
+        linear-gradient(from 0% 93% to 0% 100%, #a34313 0%, #903b12 100%),
+        #9d4024,
+        #d86e3a,
+        radial-gradient(center 50% 50%, radius 100%, #ea7f4b, #c54e2c);
+}
+#Button:pressed {
+    -fx-padding: 10 15 13 15;
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+#Button Text {
+    -fx-fill: white;
+    -fx-effect: dropshadow( gaussian , #a30000 , 0,0,0,2 );
+}
+
+#rich-blue {
+    -fx-background-color:
+        #000000,
+        linear-gradient(#7ebcea, #2f4b8f),
+        linear-gradient(#426ab7, #263e75),
+        linear-gradient(#395cab, #223768);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 3,2,2,2;
+    -fx-padding: 12 30 12 30;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+}
+#rich-blue Text {
+    -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 0, 0.0 , 0 , 1);
+}
+
+.chat-vc {
+    -fx-background-color: #173142;
+}
+
+.logo {
+    -fx-font-family: 'gateway';
+    -fx-text-fill: #2ABC9D;
+    -fx-font-size: 130;
+}
+
+.blurred-logo {
+    -fx-font-family: 'gateway';
+    -fx-font-size: 390;
+}
+
+.logo-shadow {
+    -fx-font-family: 'gateway';
+    -fx-text-fill: #4A5A66;
+    -fx-font-size: 130;
+}
+
+.welcome-message {
+    -fx-font-family: 'avenirnext-ultralight';
+    -fx-font-size: 30;
+}
+
+.home-icon {
+    -fx-font-family: 'gateway';
+    -fx-text-fill: #2ABC9D;
+    -fx-font-size: 36;
+}
+
+.graph {
+   -fx-background-image: url("Background.png");
+   -fx-background-repeat: stretch;
+   -fx-background-size: 730 510;
+   -fx-background-position: center center;
+}
+
+.menu-bar-button {
+    -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 3;
+    -fx-background-color: transparent;
+    -fx-font-family: 'avenirnext-regular';
+    -fx-text-fill: #23A087;
+    -fx-font-size: 18;
+}
+
+.menu-bar-button-selected {
+    -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 3;
+    -fx-background-color: transparent;
+    -fx-font-family: 'avenirnext-regular';
+    -fx-text-fill: #ffff;
+    -fx-font-size: 18;
+}
+
+.scrollview-bar > .list-view {
+    -fx-background-color: -blue; // or define other color to highlight the border
+}
+
+
+.scrollview-bar .scroll-bar: vertical .track {
+    -fx-background-color: #50595E ;
+    -fx-border-color:transparent;
+    -fx-background-radius: 0em;
+    -fx-border-radius:2em;
+}
+
+/* The increment and decrement button CSS class of scrollbar */
+
+.scrollview-bar .scroll-bar:vertical .increment-button ,
+.scrollview-bar .scroll-bar:vertical .decrement-button {
+    -fx-background-color:transparent;
+    -fx-padding: 0px;
+}
+
+.scrollview-bar .scroll-bar .increment-arrow,
+.scrollview-bar .scroll-bar .decrement-arrow, {
+    -fx-padding: 0 0 0 0;
+    -fx-shape: "";
+}
+
+.scrollview-bar .list-cell:odd { -fx-background-color: #2D383E; }
+.scrollview-bar .list-cell:even { -fx-background-color: #2D383E; }
+
+
+.conversation-name {
+    -fx-font-family: 'avenirnext-regular';
+    -fx-font-size: 14;
+}
+
+.conversation-last-message {
+    -fx-font-family: 'avenirnext-regular';
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 12;
+}
+
+.conversation-time-stamp {
+    -fx-font-family: 'avenirnext-ultralight';
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 12;
+}
+
+.conversation-initials {
+    -fx-font-family: 'avenirnext-ultralight';
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 26;
+}
+
+.conversation-gateway {
+    -fx-font-family: 'gateway';
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 28;
+
+}
+
+.message-bar-text-field {
+    -fx-text-box-border: #36424B;
+    -fx-background-color: #36424B;
+    -fx-text-fill: #7E97A5;
+    -fx-background-insets: 0;
+    -fx-padding: 1 3 1 3;
+    -fx-faint-focus-color: transparent;
+    -fx-font-family: 'avenirnext-ultralight';
+    -fx-font-size: 14;
+    -fx-highlight-fill: #4A5A66;
+    -fx-min-width: 420;
+    -fx-min-height: 28;
+}
+
+.message-bar-text-field-gateway {
+    -fx-text-box-border: #36424B;
+    -fx-background-color: #36424B;
+    -fx-text-fill: #7E97A5;
+    -fx-background-insets: 0;
+    -fx-padding: 1 3 1 3;
+    -fx-faint-focus-color: transparent;
+    -fx-font-family: 'avenirnext-ultralight';
+    -fx-font-size: 14;
+    -fx-highlight-fill: #4A5A66;
+    -fx-min-width: 690;
+    -fx-min-height: 28;
+}
+
+.message-bar-text-field .content {
+    -fx-background-color: #36424B;
+    -fx-border-color: #36424B;
+}
+
+.message-bar-text-field-gateway .content {
+    -fx-background-color: #36424B;
+    -fx-border-color: #36424B;
+}
+
+.message-bar-text-field .scroll-bar:vertical {
+    -fx-padding: 1px;
+    -fx-background-radius: 0em;
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+
+}
+
+.message-bar-text-field-gateway .scroll-bar:vertical {
+    -fx-padding: 1px;
+    -fx-background-radius: 0em;
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+}
+
+
+.gateway-table-view > .list-view {
+    -fx-background-color: -blue; // or define other color to highlight the border
+}
+
+.gateway-table-view .list-cell:odd { -fx-background-color: transparent; }
+.gateway-table-view .list-cell:even { -fx-background-color: transparent; }
+
+.gateway-table-view .scroll-bar: vertical .track {
+    -fx-background-color: #50595E ;
+    -fx-border-color:transparent;
+    -fx-background-radius: 0em;
+    -fx-border-radius:2em;
+}
+
+/* The increment and decrement button CSS class of scrollbar */
+
+.gateway-table-view .scroll-bar:vertical .increment-button ,
+.gateway-table-view .scroll-bar:vertical .decrement-button {
+    -fx-background-color:transparent;
+    -fx-padding: 0px;
+}
+
+.gateway-table-view .scroll-bar .increment-arrow,
+.gateway-table-view .scroll-bar .decrement-arrow, {
+    -fx-padding: 0 0 0 0;
+    -fx-shape: "";
+   /* -fx-background-color: transparent;*/
+}
+
+.contact-field {
+    -fx-text-box-border: transparent;
+    -fx-background-color: #7C8A92;
+    -fx-background-radius: 4 4 4 4;
+    -fx-text-fill: #D8D8D8;
+    -fx-background-insets: 0;
+    -fx-padding: 1 3 1 3;
+    -fx-faint-focus-color: transparent;
+    -fx-font-family: 'avenirnext-ultralight';
+    -fx-font-size: 13;
+    -fx-highlight-fill: #4A5A66;
+}
+
+.contact-button {
+    -fx-font-family: 'gateway';
+    -fx-text-fill: #7C8A92;
+    -fx-font-size: 25;
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 3;
+    -fx-background-color: transparent;
+}
+
+.notification-view {
+    -fx-background-color: #2D383E;
+}
+
+#NOTIFICATION {
+     -fx-background-radius: 30;
+     -fx-border-radius: 20;
+     -fx-border-width:5;
+     -fx-border-color:transparent;
+ }
+
+ #ICON {
+    -fx-font-family: 'gateway';
+    -fx-text-fill: #2ABC9D;
+    -fx-font-size: 46;
+ }
+
+ .HEADER {
+    -fx-font-family: 'avenirnext-regular';
+    -fx-font-size: 15;
+    -fx-text-fill: #989DA0;
+ }
+
+ .MESSAGE {
+    -fx-font-family: 'avenirnext-regular';
+    -fx-text-fill: #EEEEEE;
+    -fx-font-size: 13;
+ }
+
+.CLOSE {
+    -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 3;
+    -fx-background-color: #2ABC9D;
+    -fx-font-family: 'avenirnextmedium';
+    -fx-text-fill: #2D383E;
+    -fx-font-size: 20;
+
+}
+
+.OPEN {
+    -fx-min-width: 30;
+    -fx-min-height: 12;
+    -fx-max-height: 12;
+    -fx-pref-height: 12;
+
+    -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-border-radius: 3;
+    -fx-border-insets: 8 8 8 8;
+    -fx-background-color: transparent;
+    -fx-font-family: 'avenirnext-regular';
+    -fx-text-fill: #989DA0;
+    -fx-font-size: 10;
+    -fx-border-color: #989DA0;
+    -fx-border-width: 4;
+}

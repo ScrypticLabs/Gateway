@@ -1,0 +1,100 @@
+.text-input {
+    -fx-prompt-text-fill: derive(-fx-control-inner-background, -30%);
+}
+
+.text-input:focused {
+    -fx-prompt-text-fill: transparent;
+}
+
+.login-field {
+    -fx-text-box-border: transparent;
+    -fx-background-color: transparent;
+    -fx-text-fill: #FED2D2;
+    -fx-background-insets: 0;
+    -fx-padding: 1 3 1 3;
+    -fx-faint-focus-color: transparent;
+    -fx-font-family: 'avenirnext-ultralight';
+    -fx-font-size: 24;
+    -fx-highlight-fill: #345B74;
+}
+
+.text-field:focused {
+    -fx-focus-color: transparent;
+}
+
+.login-button {
+    -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 3;
+    -fx-background-color: #345B74;
+    -fx-font-family: 'avenirnextmedium';
+    -fx-text-fill: #C6E6F3;
+    -fx-font-size: 20;
+}
+
+.signUpNotifier {
+    -fx-text-fill: #EDD1D1;
+    -fx-font-family: 'avenirnext-ultralight';
+    -fx-font-size: 18;
+}
+
+.sign-up-button {
+    -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 3;
+    -fx-background-color: transparent;
+    -fx-font-family: 'avenirnext-ultralight';
+    -fx-text-fill: #CAF0FF;
+    -fx-font-size: 18;
+}
+
+.toolbar-button {
+    -fx-background-color: transparent;
+}
+
+
+
+#Button {
+    -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color:
+        linear-gradient(from 0% 93% to 0% 100%, #a34313 0%, #903b12 100%),
+        #9d4024,
+        #d86e3a,
+        radial-gradient(center 50% 50%, radius 100%, #d86e3a, #c54e2c);
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+}
+#Button:hover {
+    -fx-background-color:
+        linear-gradient(from 0% 93% to 0% 100%, #a34313 0%, #903b12 100%),
+        #9d4024,
+        #d86e3a,
+        radial-gradient(center 50% 50%, radius 100%, #ea7f4b, #c54e2c);
+}
+#Button:pressed {
+    -fx-padding: 10 15 13 15;
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+#Button Text {
+    -fx-fill: white;
+    -fx-effect: dropshadow( gaussian , #a30000 , 0,0,0,2 );
+}
+
+#rich-blue {
+    -fx-background-color:
+        #000000,
+        linear-gradient(#7ebcea, #2f4b8f),
+        linear-gradient(#426ab7, #263e75),
+        linear-gradient(#395cab, #223768);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 3,2,2,2;
+    -fx-padding: 12 30 12 30;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+}
+#rich-blue Text {
+    -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 0, 0.0 , 0 , 1);
+}

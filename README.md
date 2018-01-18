@@ -5,8 +5,9 @@ Messenger Platform with Built-in Bots for Spontaneous or Requested Interaction w
  
  ![alt-tag](https://raw.githubusercontent.com/ScrypticLabs/Gateway/master/ios/imgs/1.png)  ![alt-tag](https://raw.githubusercontent.com/ScrypticLabs/Gateway/master/ios/imgs/2.png)  ![alt-tag](https://raw.githubusercontent.com/ScrypticLabs/Gateway/master/ios/imgs/3.png)
 
+
 # Gateway Desktop
 
   ![alt-tag](https://raw.githubusercontent.com/ScrypticLabs/Gateway/master/desktop/imgs/1.png)  
   ![alt-tag](https://raw.githubusercontent.com/ScrypticLabs/Gateway/master/desktop/imgs/2.png)  
-  ![alt-tag](https://raw.githubusercontent.com/ScrypticLabs/Gateway/master/desktop/imgs/3.png
+  ![alt-tag](https://raw.githubusercontent.com/ScrypticLabs/Gateway/master/desktop/imgs/3.png)
